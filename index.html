@@ -27,13 +27,12 @@
   <body>
     <div class="container-fluid">
       <div class="calculator">
-        <input type="text" class="calculator-screen" value="0"  />
-
+        <div class="calculator-screen" value="0" id="screen">0</div>
         <div class="calculator-keys">
-          <button type="button" class="operator" value="+">+</button>
-          <button type="button" class="operator" value="-">-</button>
-          <button type="button" class="operator" value="*">&times;</button>
-          <button type="button" class="operator" value="/">&divide;</button>
+          <button type="button" class="operator" value="+" data-action="add">+</button>
+          <button type="button" class="operator" value="-" data-action="subtract">-</button>
+          <button type="button" class="operator" value="*" data-action="multiply">&times;</button>
+          <button type="button" class="operator" value="/" data-action="divide">&divide;</button>
 
           <button type="button" value="7">7</button>
           <button type="button" value="8">8</button>
@@ -49,10 +48,10 @@
 
           <button type="button" value="0">0</button>
           <button type="button" class="decimal" value=".">.</button>
-          <button type="button" class="all-clear" value="all-clear">CLEAR</button>
-          <button type="button" class="all-clear" value="delete">DEL</button>
+          <button type="button" class="all-clear" value="all-clear" data-action="clear">CLEAR</button>
+          <button type="button" class="all-clear" value="delete" data-action="delete">DEL</button>
 
-          <button type="button" class="equal-sign" value="=">=</button>
+          <button type="button" class="equal-sign" value="=" data-action="equals">=</button>
         </div>
       </div>
     </div>
