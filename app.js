@@ -89,7 +89,7 @@ function calculate() {
 function round(number) {
   return Math.round(number * 1000) / 1000;
 }
-//___reset screen function - empty the screen so that it can start from a new number
+//___reset screen function - empty the screen so that it can start from a new number and not zero
 function reset() {
   calculationScreen.textContent = "";
   resetScreen = false;
